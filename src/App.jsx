@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 import { getCrypto } from "./services/api";
+import CryptoChart from "./components/CryptoChart";
 
 function App() {
   const [bitcoin, setBitcoin] = useState("");
@@ -165,6 +166,7 @@ function App() {
           )}
         </div>
       </div>
+      <CryptoChart />
     </div>
   );
 }
