@@ -5,6 +5,9 @@ import { getCrypto } from "./services/api";
 import CryptoChart from "./components/CryptoChart";
 import EmployeeCards from "./components/EmployeeCards";
 import SalesChart from "./components/SalesChart";
+import AQIWidget from "./components/AQIWidget";
+import StockWidget from "./components/StockWidget";
+import GoldWidget from "./components/GoldWidget";
 
 function App() {
   const [bitcoin, setBitcoin] = useState("");
@@ -172,7 +175,14 @@ function App() {
       <CryptoChart />
 
       <EmployeeCards />
+
       <SalesChart />
+
+      <AQIWidget />
+
+      <StockWidget />
+
+      <GoldWidget />
 
     </div>
   );
