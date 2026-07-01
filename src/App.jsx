@@ -4,6 +4,7 @@ import "./App.css";
 import { getCrypto } from "./services/api";
 import CryptoChart from "./components/CryptoChart";
 import EmployeeCards from "./components/EmployeeCards";
+import SalesChart from "./components/SalesChart";
 
 function App() {
   const [bitcoin, setBitcoin] = useState("");
@@ -171,6 +172,7 @@ function App() {
       <CryptoChart />
 
       <EmployeeCards />
+      <SalesChart />
 
     </div>
   );
