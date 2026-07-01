@@ -8,6 +8,7 @@ import SalesChart from "./components/SalesChart";
 import AQIWidget from "./components/AQIWidget";
 import StockWidget from "./components/StockWidget";
 import GoldWidget from "./components/GoldWidget";
+import SOPWidget from "./components/SOPWidget";
 
 function App() {
   const [bitcoin, setBitcoin] = useState("");
@@ -183,6 +184,8 @@ function App() {
       <StockWidget />
 
       <GoldWidget />
+
+      <SOPWidget />
 
     </div>
   );
