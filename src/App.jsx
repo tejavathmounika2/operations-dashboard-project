@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.css";
 import { getCrypto } from "./services/api";
 import CryptoChart from "./components/CryptoChart";
+import EmployeeCards from "./components/EmployeeCards";
 
 function App() {
   const [bitcoin, setBitcoin] = useState("");
@@ -165,10 +166,15 @@ function App() {
             ))
           )}
         </div>
-      </div>
+            </div>
+
       <CryptoChart />
+
+      <EmployeeCards />
+
     </div>
   );
 }
 
 export default App;
+
