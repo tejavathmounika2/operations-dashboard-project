@@ -9,7 +9,9 @@ import AQIWidget from "./components/AQIWidget";
 import StockWidget from "./components/StockWidget";
 import GoldWidget from "./components/GoldWidget";
 import SOPWidget from "./components/SOPWidget";
-
+import FuelPriceWidget from "./components/FuelPriceWidget";
+import QuoteWidget from "./components/QuoteWidget";
+import WorldClockWidget from "./components/WorldClockWidget";
 function App() {
   const [bitcoin, setBitcoin] = useState("");
   const [ethereum, setEthereum] = useState("");
@@ -184,6 +186,12 @@ function App() {
       <GoldWidget />
 
       <SOPWidget />
+      
+      <FuelPriceWidget />
+
+      <QuoteWidget />
+
+      <WorldClockWidget />
 
     </div>
   );
