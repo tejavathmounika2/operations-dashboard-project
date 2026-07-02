@@ -2,7 +2,12 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function CurrencyWidget() {
-  const [rates, setRates] = useState({});
+  const [rates, setRates] = useState({
+    USD: "",
+    EUR: "",
+    GBP: "",
+    JPY: "",
+  });
 
   useEffect(() => {
     loadRates();
@@ -11,12 +16,12 @@ function CurrencyWidget() {
   const loadRates = async () => {
     try {
       const res = await axios.get(
-        "https://api.frankfurter.app/latest?from=INR&to=USD,EUR,GBP,JPY"
+        "https://api.frankfurter.dev/v1/latest?from=INR&to=USD,EUR,GBP,JPY"
       );
 
       setRates(res.data.rates);
     } catch (error) {
-      console.log(error);
+      console.log("Currency API Error:", error);
     }
   };
 
@@ -32,10 +37,10 @@ function CurrencyWidget() {
     >
       <h2>💱 Currency Rates</h2>
 
-      <p>USD : {rates.USD}</p>
-      <p>EUR : {rates.EUR}</p>
-      <p>GBP : {rates.GBP}</p>
-      <p>JPY : {rates.JPY}</p>
+      <p>USD : {rates.USD || "Loading..."}</p>
+      <p>EUR : {rates.EUR || "Loading..."}</p>
+      <p>GBP : {rates.GBP || "Loading..."}</p>
+      <p>JPY : {rates.JPY || "Loading..."}</p>
     </div>
   );
 }

@@ -14,6 +14,12 @@ import QuoteWidget from "./components/QuoteWidget";
 import WorldClockWidget from "./components/WorldClockWidget";
 import HolidayWidget from "./components/HolidayWidget";
 import CurrencyWidget from "./components/CurrencyWidget";
+import MarketWidget from "./components/MarketWidget";
+import AttendanceWidget from "./components/AttendanceWidget";
+import InventoryWidget from "./components/InventoryWidget";
+import TreasuryWidget from "./components/TreasuryWidget";
+import LogisticsWidget from "./components/LogisticsWidget";
+import SystemAlertsWidget from "./components/SystemAlertsWidget";
 function App() {
   const [bitcoin, setBitcoin] = useState("");
   const [ethereum, setEthereum] = useState("");
@@ -198,6 +204,18 @@ function App() {
       <HolidayWidget />
 
       <CurrencyWidget />
+
+      <MarketWidget />
+
+      <AttendanceWidget />
+
+      <InventoryWidget />
+
+      <TreasuryWidget />
+
+      <LogisticsWidget />
+      
+      <SystemAlertsWidget />
 
     </div>
   );
