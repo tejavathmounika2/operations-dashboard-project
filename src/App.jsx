@@ -128,9 +128,7 @@ function App() {
       <p>
         <b>Last Updated:</b> {lastUpdated}
       </p>
-
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
-        <div style={{ background: "orange", padding: "20px", borderRadius: "10px", width: "250px" }}>
+<div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>        <div style={{ background: "orange", padding: "20px", borderRadius: "10px", width: "250px" }}>
           <h3>Bitcoin</h3>
           <h2>${bitcoin}</h2>
         </div>
