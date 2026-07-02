@@ -13,6 +13,7 @@ import FuelPriceWidget from "./components/FuelPriceWidget";
 import QuoteWidget from "./components/QuoteWidget";
 import WorldClockWidget from "./components/WorldClockWidget";
 import HolidayWidget from "./components/HolidayWidget";
+import CurrencyWidget from "./components/CurrencyWidget";
 function App() {
   const [bitcoin, setBitcoin] = useState("");
   const [ethereum, setEthereum] = useState("");
@@ -195,6 +196,8 @@ function App() {
       <WorldClockWidget />
 
       <HolidayWidget />
+
+      <CurrencyWidget />
 
     </div>
   );
